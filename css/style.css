@@ -377,7 +377,7 @@ GALERÍA
 
 /* Carrusel */
 
-.gallery-track{
+/* .gallery-track{
 
     display:flex;
 
@@ -387,11 +387,27 @@ GALERÍA
 
     animation:gallery-scroll 28s linear infinite;
 
+} */
+
+.gallery-track {
+
+    display:flex;
+
+    gap:16px;
+
+    width:max-content;
+
+    animation: gallery-scroll 28s linear infinite;
+
+    will-change: transform;
+
+    transform: translate3d(0,0,0);
+
 }
 
 /* Fotos */
 
-.gallery-track img{
+/* .gallery-track img{
 
     width:auto;
 
@@ -407,10 +423,26 @@ GALERÍA
 
     transition:transform .3s ease;
 
+} */
+.gallery-track img {
+
+    width:auto;
+    height:350px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    flex-shrink:0;
+
+    box-shadow:0 0 15px rgba(0,0,0,.10);
+
+    backface-visibility:hidden;
+
 }
 
 /* Animación */
-
+/* 
 @keyframes gallery-scroll{
 
     from{
@@ -419,6 +451,18 @@ GALERÍA
 
     to{
         transform:translateX(calc(-50% - 8px));
+    }
+
+} */
+
+@keyframes gallery-scroll{
+
+    from{
+        transform:translate3d(0,0,0);
+    }
+
+    to{
+        transform:translate3d(calc(-50% - 8px),0,0);
     }
 
 }
