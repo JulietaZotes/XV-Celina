@@ -23,6 +23,20 @@
 <body>
     <main>
 
+        <!-- BOTÓN para activar música -->
+        <button id="music-btn" class="music-button" aria-label="Activar música">
+
+            <img id="music-icon" src="./assets/icons/music-off.svg" alt="Música">
+
+        </button>
+
+        <!-- AUDIO -->
+        <audio id="music" loop>
+
+            <source src="./assets/audio/a-million-dreams-instrumental-cover.mp3" type="audio/mpeg">
+
+        </audio>
+
         <!-- HERO -->
         <header class="hero">
             <img src="assets/hero.jpg" alt="Invitación XV Celina">
@@ -73,6 +87,8 @@
 
         <!-- INFORMACIÓN -->
         <section class="event-info reveal">
+            
+            <img src="./assets/flor.svg" alt="" class="flower">
 
             <div class="info-item">
                 <img class="info-icon" src="assets/icons/calendario.svg" alt="Fecha">
@@ -101,49 +117,49 @@
         </section>
 
         <!-- GALERÍA -->
-        <section class="gallery section reveal">
-        
+        <section class="gallery section">
+
             <div class="gallery-slider">
-        
+
                 <div class="gallery-track">
-        
+
                     <img src="assets/img/foto01.jpeg">
                     <img src="assets/img/foto04.jpeg">
                     <img src="assets/img/foto02.jpeg">
                     <img src="assets/img/foto05.jpeg">
                     <img src="assets/img/foto06.jpeg">
-        
+
                     <img src="assets/img/foto01.jpeg">
                     <img src="assets/img/foto04.jpeg">
                     <img src="assets/img/foto02.jpeg">
                     <img src="assets/img/foto05.jpeg">
                     <img src="assets/img/foto06.jpeg">
-        
+
                 </div>
-        
+
             </div>
-        
+
         </section>
-        
+
         <!-- REGALOS -->
         <section class="gift section reveal">
-        
+
             <div class="info-item">
-        
+
                 <img class="info-icon" src="assets/icons/regalo.svg" alt="Regalos">
 
                 <h3 class="title text-light">Regalos</h3>
-        
+
                 <p class="text text-light">
                     ¡LO MÁS IMPORTANTE PARA MÍ ES COMPARTIR ESTE DÍA CON VOS!<br>
                 </p>
-        
+
                 <p class="text text-light">
                     SI DESEÁS HACERME UN PRESENTE, ENCONTRARÁS UN BUZÓN EN LA RECEPCIÓN
                 </p>
-        
+
             </div>
-        
+
         </section>
 
         <!-- CONFIRMACIÓN -->
@@ -152,14 +168,14 @@
                 <img class="info-icon" src="assets/icons/check.svg" alt="Confirmacion">
                 <h3 class="title">Confirmá tu asistencia</h3>
                 <p class="subtitle">TU PRESENCIA HARÁ<br>ESTE DÍA AÚN MÁS ESPECIAL</p>
-                <a href="https://wa.link/jze20e"
-                    target="_blank" class="btn">
+                <a href="https://wa.link/jze20e" target="_blank" class="btn">
                     CONFIRMAR
                 </a>
 
                 <div class="confirmation-message">
                     <p class="text text-light confirmation-text">
-                        PODÉS CONFIRMAR TU ASISTENCIA <strong>HASTA EL 09/08</strong> (INCLUSIVE). SI TENÉS ALGUNA <strong>RESTRICCIÓN ALIMENTARIA</strong>, POR FAVOR INDICALA EN EL MISMO MENSAJE
+                        PODÉS CONFIRMAR TU ASISTENCIA <strong>HASTA EL 09/08</strong> (INCLUSIVE). SI TENÉS ALGUNA
+                        <strong>RESTRICCIÓN ALIMENTARIA</strong>, POR FAVOR INDICALA EN EL MISMO MENSAJE
                     </p>
 
                 </div>
@@ -171,18 +187,18 @@
         <section class="album section reveal">
 
             <img class="album-img" src="assets/img/foto03.jpeg" alt="fotografia">
-            
+
             <div class="info-item">
                 <img class="info-icon" src="assets/icons/camara.svg" alt="camara">
                 <h3 class="title">¡Compartí tus fotos!</h3>
                 <p class="subtitle">AYUDANOS A GUARDAR<br>ESTA NOCHE PARA SIEMPRE</p>
-                <a href="https://drive.google.com/drive/folders/1trCexmiSeKT4d7bbm33b7rKn_M9LXaes"
-                    target="_blank" class="btn">
+                <a href="https://drive.google.com/drive/folders/1trCexmiSeKT4d7bbm33b7rKn_M9LXaes" target="_blank"
+                    class="btn">
                     ALBÚM DE FOTOS
                 </a>
             </div>
 
-        </section> 
+        </section>
 
         <!-- SALUDO FINAL -->
         <section class="saludo section reveal">

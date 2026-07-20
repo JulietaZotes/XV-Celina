@@ -27,6 +27,64 @@ revealElements.forEach(element => {
     revealObserver.observe(element);
 });
 
+/* ==========================
+MÚSICA
+========================== */
+
+const audio = document.getElementById("music");
+const button = document.getElementById("music-btn");
+const icon = document.getElementById("music-icon");
+
+let isPlaying = false;
+
+// Intentar reproducir automáticamente
+window.addEventListener("load", async () => {
+
+    try {
+
+        await audio.play();
+
+        isPlaying = true;
+        icon.src = "./assets/icons/music-on.svg";
+
+    } catch {
+
+        isPlaying = false;
+        icon.src = "./assets/icons/music-off.svg";
+
+    }
+
+});
+
+// Alternar reproducción
+button.addEventListener("click", async () => {
+
+    if (isPlaying) {
+
+        audio.pause();
+
+        isPlaying = false;
+        icon.src = "./assets/icons/music-off.svg";
+
+    } else {
+
+        try {
+
+            await audio.play();
+
+            isPlaying = true;
+            icon.src = "./assets/icons/music-on.svg";
+
+        } catch (error) {
+
+            console.error(error);
+
+        }
+
+    }
+
+});
+
 
 // ==========================
 // COUNTDOWN
