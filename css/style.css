@@ -69,6 +69,24 @@ section {
 }
 
 /* ==========================
+ANIMACIONES
+========================== */
+
+.reveal{
+
+    opacity: 0;
+
+    transition: opacity .8s ease;
+
+}
+
+.reveal.active{
+
+    opacity: 1;
+
+}
+
+/* ==========================
 Formatos de texto
 ========================== */
 

@@ -1,3 +1,37 @@
+// ==========================
+// ANIMACIÓN FADE AL HACER SCROLL
+// ==========================
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+
+            entry.target.classList.add("active");
+
+            // Deja de observar la sección una vez que apareció
+            revealObserver.unobserve(entry.target);
+
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+revealElements.forEach(element => {
+    revealObserver.observe(element);
+});
+
+
+// ==========================
+// COUNTDOWN
+// ==========================
+
 const eventDate = new Date("August 22, 2026 20:30:00").getTime();
 
 const countdown = setInterval(() => {
