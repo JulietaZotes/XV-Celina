@@ -114,7 +114,8 @@ Formatos de texto
 .subtitle{
 
     font-family:var(--font-text);
-    font-size:17px;
+    max-width: 300px;
+    font-size:16px;
     font-weight:400;
     line-height:1.2;
     color: var(--text-info);
@@ -327,7 +328,7 @@ INFO
     height: 200px;
 
     left: -60px;
-    bottom: -5px;
+    bottom: 10px;
 
     z-index:0;
 
