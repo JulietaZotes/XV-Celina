@@ -167,7 +167,7 @@ BOTONES
     cursor: pointer;
 }
 
-.btn:hover {
+.btn:active {
     background-color: rgb(107, 107, 107, 0.7);
     color: var(--text-secondary);
     transform: scale(1.1);
@@ -572,6 +572,8 @@ SALUDO
     margin-top:20px;
 
     font-size:50px;
+    
+    padding-bottom:10px;
 
 }
 
