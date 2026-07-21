@@ -574,3 +574,28 @@ SALUDO
     font-size:50px;
 
 }
+
+/* ==========================
+FOOTER
+========================== */
+
+.footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.footer .text {
+    color: var(--text-info);
+    font-size: 10px;
+}
+
+.footer-img {
+    width: 100px;
+    height: auto;
+}
